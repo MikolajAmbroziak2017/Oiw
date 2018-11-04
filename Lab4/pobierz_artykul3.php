@@ -7,7 +7,7 @@ header('Content-type: application/json');
 require_once('connection.php');
  
 $db=connection();
-$zapytanie_pobierz = "SELECT * FROM `artykul` WHERE ID_Articles=2";
+$zapytanie_pobierz = "SELECT * FROM `artykul` WHERE ID_Articles=3";
 /*Wykonanie zapytania SELECT*/
 $wynik_pobierz = mysqli_query($db, $zapytanie_pobierz);
 /*Przygotowanie tablicy, która będzie przechowywać dane z bazy*/

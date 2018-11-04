@@ -11,14 +11,15 @@
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
   <title>Programowanie serwisów www</title> 
-  
-  </head>
-
-<body>
-<script
+  <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script type ="text/javascript" src = "scripts/text.js"></script>  
+  </head>
+
+<body>
+
 
 
     <header>
@@ -82,6 +83,7 @@ $conn->close();
               <a id ="czytaj_dalej1" onclick="czytaj1()">czytaj dalej...</a>           
             </article>
 </div>
+<div id="show1"></div>
             <hr />
       </section>
       
@@ -93,7 +95,7 @@ $conn->close();
               Wodoodporny smartfon z wyświetlaczem o przekątnej 4,7 cala, który bez problemu obsłużymy jedną dłonią. iPhone 7 z optycznym stabilizatorem obrazu powinien zadowolić miłośników fotografii, nawet jeżeli zdarzy się im się robić zdjęcia przy niezbyt dobrym oświetleniu. Dzięki akumulatorowi o pojemności 1960 mAh oraz cztero­rdzeniowemu procesorowi, który ma dwa energooszczędne rdzenie, iPhone 7 umożliwia do 11 godzin ciągłej pracy.
               <a id ="czytaj_dalej2" onclick="czytaj2()">czytaj dalej...</a>
             </article>
-</div>
+</div><div id="show2"></div>
             <hr />
             
       </section>
@@ -105,17 +107,16 @@ $conn->close();
               Cena w stosunku do oferowanej wydajności w przypadku tego modelu jest niewątpliwie atrakcyjna. Design, wyświetlacz i innowacyjne aparaty z funkcją nagrywania wideo w 4K to najmocniejsze strony Nokii 8. Pozostałe komponenty, takie jak szybki procesor, duża ilość pamięci operacyjnej i wewnętrznej również nie zawodzą. Nokia 8 sprosta wszystkim zadaniom.
               <a id ="czytaj_dalej3" onclick="czytaj3()">czytaj dalej...</a>
             </article>
-</div>
+</div><div id="show3"></div>
       </section>
       <hr />
-      <button id="pobierz" type="button" > przycisk</button>
       
-              <script type ="text/javascript" src = "scripts/text.js"></script>  
+             
             
       <param>Zapisz się na newsletter</p>
       <form method="POST" action="add_newsletter.php">
       Podaj e-mail: <input type="text" size="40" name="email"><br>
-      <input type="submit" value="dodaj!">
+      <input type="submit" value="Zapisz się!">
 </form>
     </div>
   </div>
@@ -143,8 +144,6 @@ $conn->close();
    
     </div>
      <script src="jquery.js"></script>
-    
-    <div id ="response">pyku</div>
   </footer>
  
 
