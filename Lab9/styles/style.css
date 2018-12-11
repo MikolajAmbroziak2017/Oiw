@@ -1,0 +1,350 @@
+﻿
+.article{
+
+text-align-last: center;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+header{
+width: 100%;
+}
+.checked {
+  color: orange;
+}
+.filtry{
+	transition: 0.3s;
+}
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.linki{
+  color: chartreuse;
+  font-size:14px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+p.tytul{
+  display: none;
+
+}
+  
+aside{ 
+  text-align: center;
+  margin: 0%;
+  border: 1px groove gray;
+
+}
+#oceny{border: 3mm groove gray;}
+footer{
+  text-align: center;
+  margin: 0%;
+  border: 1px groove gray;
+ }
+
+
+
+h1 {
+    margin: 0;
+  padding: 20px 0;    
+  color: black;
+  background: whitesmoke;
+  text-shadow: 3px 3px 1px black;
+}
+ 
+h2
+{
+margin: 0;
+padding: 20px 0;
+color: rgb(48, 15, 15);
+text-shadow: 3px 3px 1px rgb(0, 0, 0);
+}
+  body {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 6px solid black;
+   
+   } 
+
+  a {
+    color: Black
+  }
+  a:link
+{
+  color:#31508f;
+}
+
+a:visited
+{
+  color:maroon;
+}
+
+a:hover
+{
+  color:red;
+}
+
+a:active
+{
+  color:green;
+}
+  html {
+  font-size: 27px; /* px oznacz 'piksele': bazowy rozmiar tekstu to teraz 10 pikseli wysokości  */
+  font-family: placeholder; /* tu powinnien być font-family wygenerowany w Google fonts */
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.wrap-all {
+		overflow: hidden;
+		width:100%;
+		position: relative;
+	}
+	.page-main {
+		padding:20px;
+		position: relative;
+		color:#666;
+		font: size 24px;
+    line-height: 1.4em;
+    text-align: center;
+	}
+
+/* navigation toggle */
+	.navigation-toggle {
+		position:fixed;
+		top:10px;
+		right:10px;
+		width:40px;
+		height:40px;
+		background: #222;
+		border-radius:2px;
+		display: block;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.navigation-toggle span {
+		width:20px;
+		height:3px;
+		margin:4px 10px;
+		display: block;
+		background: #fff;
+		border-radius:1px;
+	}
+	.navigation-toggle span:first-child {
+		margin-top:12px;
+	}
+
+/* navigation */
+	.navigation {
+		z-index: 2;
+		min-height: 100%;
+		font-family:'Source Sans Serif', sans-serif;
+		font-weight:300;
+		font-size:14px;
+		position: fixed;
+		top:0;
+		left:-250px;
+		width:250px;
+		background: #1A2124;
+		height:100%;
+		overflow: hidden;
+		overflow-y:auto;
+		color:#42505A;
+		-webkit-transition: 0.5s left;
+		-moz-transition: 0.5s left;
+		-ms-transition: 0.5s left;
+		-o-transition: 0.5s left;
+		transition: 0.5s left;
+	}
+
+	.navigation a {
+		color:#42505A;
+	}
+	.navigation ul {
+		list-style:none;
+		padding:0;
+		margin:20px 0;
+	}
+	.navigation ul li {
+		text-transform: uppercase;
+		border-bottom:1px solid #090B0D;
+		font-weight:600;
+	}
+	.navigation ul li:last-child {
+		border-bottom:0;
+	}
+	.navigation ul li a {
+		display: block;
+		height:50px;
+		line-height: 50px;
+		text-decoration: none;
+		padding:0 20px 0 30px;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+
+	}
+	.navigation ul li a:hover {
+		background:#3BB4BC;
+		color:#fff;
+		border-left:6px solid #329EA5;
+	}
+	.navigation .logo {
+		text-align: center;
+		margin:20px 0;
+	}
+	.navigation .logo img {
+		max-width:120px;
+		height:auto;
+  }
+  .navigation-show .page-content {
+    left:250px;
+  }
+  .navigation-show .navigation {
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    left:0;
+  }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.checked {
+  color: orange;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
